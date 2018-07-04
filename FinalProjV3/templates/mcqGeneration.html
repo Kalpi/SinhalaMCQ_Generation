@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="MCQ Genration" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <title>Multiple Choice Questions Generation</title>
+
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/mcq.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="static/css/mcq.css" type="text/css" media="all">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Sinhala SelfLearner</a>
+            </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        </div>
+    </nav>
+
+<div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>බහුවරණ ප්‍රශ්න නිර්මාණය</h2>
+                    <div> ඔබට අවශ්‍ය විෂය කරුණු ඇතුලත් කර බහුවරණ ප්‍රශ්න ලබාගන්න </div>
+                    <form role="form" action="." method="post" id="reused_form">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                </br>
+                                <textarea class="form-control" type="textarea" id="tConent" name="tContent" placeholder="විෂය කරුණු මෙහි ඇතුලත් කරන්න" maxlength="6000" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <p>නැතහොත් පාඩමට අදාළ ලිපිගොනුව ඇතුලත් කරන්න! </p>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                        </div>
+                        </br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" onclick="" class="btn btn-lg btn-success btn-block" id="generateMCQ">බහුවරණ ප්‍රශ්න නිර්මාණය කරන්න </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+                <div class="col-md-6" id="mcqList">
+                    <h2>බහුවරණ ප්‍රශ්නාවලිය</h2>
+                </div>
+            </div>
+</div>
+
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/mcq.css')}}" rel="stylesheet">
+    <script type="text/javascript" src="static/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="static/javascript/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
